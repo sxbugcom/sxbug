@@ -304,6 +304,14 @@ body {
   height: 300px;
   position: relative;
   border-bottom: 1px solid #ddd;
+/*
+  &:before
+    top: 0
+    background: linear-gradient(rgba(0, 0, 0, 0.2), transparent)
+  &:after
+    bottom: 0
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.2))
+  */
 }
 #header:before,
 #header:after {
@@ -312,20 +320,6 @@ body {
   left: 0;
   right: 0;
   height: 40px;
-}
-#header:before {
-  top: 0;
-  background: -webkit-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -moz-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -ms-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: linear-gradient(rgba(0,0,0,0.2), transparent);
-}
-#header:after {
-  bottom: 0;
-  background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -moz-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -ms-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: linear-gradient(transparent, rgba(0,0,0,0.2));
 }
 #header-outer {
   height: 100%;
@@ -380,7 +374,7 @@ body {
 .nav-icon,
 .main-nav-link {
   float: left;
-  color: #fff;
+  color: #000;
   opacity: 0.6;
   text-decoration: none;
   text-shadow: 0 1px rgba(0,0,0,0.2);
