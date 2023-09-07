@@ -1,3 +1,3 @@
-[submodule "hexo-theme-landscape"]
+[submodule "themes/landscape"]
 	path = themes/landscape
 	url = https://github.com/sxbugcom/hexo-theme-landscape.git
